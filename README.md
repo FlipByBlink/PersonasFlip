@@ -31,9 +31,6 @@ Notice
 - The persona appears as part of FaceTime/SharePlay.
 
 
-Keywords: Reversi, Othello, Board game
-
-
 <img src="PersonasFlip/Supporting files/README assets/preview400w.gif" width="400">
 
 
@@ -49,6 +46,22 @@ Promotion Video
 ----------------
 [www.youtube.com/watch?v=xCiz8T5g8vI](https://www.youtube.com/watch?v=xCiz8T5g8vI)
 
+
+<br>
+
+* * *
+
+<br>
+
+__Old app name:__ "PersonaReversi"
+
+<br>
+
+__Keywords:__ reversi, othello, board game
+
+<br>
+
+* * *
 
 <br>
 

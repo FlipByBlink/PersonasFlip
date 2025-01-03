@@ -1,4 +1,5 @@
 import SwiftUI
+import Spatial
 
 struct Piece {
     var side: Side
