@@ -161,16 +161,6 @@
         }
       }
     },
-    "none" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不参加"
-          }
-        }
-      }
-    },
     "PersonasFlip" : {
       "localizations" : {
         "ja" : {

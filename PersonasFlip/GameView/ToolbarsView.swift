@@ -1,4 +1,5 @@
 import SwiftUI
+import GroupActivities
 
 struct ToolbarsView: View {
     var body: some View {
@@ -22,8 +23,7 @@ struct ToolbarsView: View {
 private extension ToolbarsView {
     private struct ContentView: View {
         @EnvironmentObject var model: 🥽AppModel
-        @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
-        @State private var showSharePlaySubMenu: Bool = false
+        @State private var isPresentedSharePlaySubMenu: Bool = false
         var body: some View {
             HStack(spacing: 24) {
                 HStack(spacing: 24) {
@@ -59,22 +59,9 @@ private extension ToolbarsView {
                             .font(.title)
                     }
                     .buttonStyle(.plain)
-                    if self.isSharePlaying {
-                        Button {
-                            self.showSharePlaySubMenu = true
-                        } label: {
-                            Image(systemName: "shareplay")
-                                .padding()
-                                .opacity(self.showSharePlaySubMenu ? 0.5 : 1)
-                                .overlay {
-                                    if self.model.groupSession?.state == .waiting {
-                                        ProgressView()
-                                    }
-                                }
-                        }
-                        .font(.title)
-                        .buttonBorderShape(.circle)
-                        .buttonStyle(.plain)
+                    if let groupSession = self.model.groupSession {
+                        Self.SharePlaySubMenuButton(groupSession: groupSession,
+                                                    isPresented: self.$isPresentedSharePlaySubMenu)
                     }
                 }
                 .padding(12)
@@ -84,24 +71,59 @@ private extension ToolbarsView {
             }
             .rotation3DEffect(.init(angle: .degrees(20), axis: .x))
             .overlay(alignment: .bottom) {
-                if self.showSharePlaySubMenu { self.sharePlaySubMenu() }
+                if self.isPresentedSharePlaySubMenu { self.sharePlaySubMenu() }
             }
-            .animation(.default, value: self.isSharePlaying)
-            .animation(.default, value: self.showSharePlaySubMenu)
+            .animation(.default, value: self.isPresentedSharePlaySubMenu)
         }
-        private var isSharePlaying: Bool {
-#if targetEnvironment(simulator)
-            true
-//            false
-#else
-            [.waiting, .joined].contains(self.model.groupSession?.state)
-#endif
+        private struct SharePlaySubMenuButton: View {
+            @EnvironmentObject var model: 🥽AppModel
+            @ObservedObject var groupSession: GroupSession<👤GroupActivity>
+            @Binding var isPresented: Bool
+            var body: some View {
+                if [.waiting, .joined].contains(self.groupSession.state) {
+                    Button {
+                        self.isPresented = true
+                    } label: {
+                        Image(systemName: "shareplay")
+                            .padding()
+                            .opacity(self.isPresented ? 0.5 : 1)
+                            .overlay {
+                                if self.groupSession.state == .waiting {
+                                    ProgressView()
+                                }
+                            }
+                    }
+                    .font(.title)
+                    .buttonBorderShape(.circle)
+                    .buttonStyle(.plain)
+                    .animation(.default, value: self.isPresented)
+                }
+            }
+        }
+        private struct SharePlayStateView: View {
+            @ObservedObject var groupSession: GroupSession<👤GroupActivity>
+            var body: some View {
+                Text({
+                    switch self.groupSession.state {
+                        case .waiting:
+                            "waiting"
+                        case .joined:
+                            "joined"
+                        case .invalidated(reason: let error):
+                            "invalidated, (\(error.localizedDescription))"
+                        @unknown default:
+                            "unknown"
+                    }
+                }() as LocalizedStringKey)
+                .scaleEffect(0.8)
+                .foregroundStyle(.secondary)
+            }
         }
         private func sharePlaySubMenu() -> some View {
             VStack {
                 HStack {
                     Button {
-                        self.showSharePlaySubMenu = false
+                        self.isPresentedSharePlaySubMenu = false
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .imageScale(.large)
@@ -111,22 +133,9 @@ private extension ToolbarsView {
                     .buttonStyle(.plain)
                     Spacer()
                     Text("SharePlay state:")
-                    Text({
-                        switch self.model.groupSession?.state {
-                            case .waiting:
-                                "waiting"
-                            case .joined:
-                                "joined"
-                            case .invalidated(reason: let error):
-                                "invalidated, (\(error.localizedDescription))"
-                            case .none:
-                                "none"
-                            @unknown default:
-                                "unknown"
-                        }
-                    }() as LocalizedStringKey)
-                    .scaleEffect(0.8)
-                    .foregroundStyle(.secondary)
+                    if let groupSession = model.groupSession {
+                        SharePlayStateView(groupSession: groupSession)
+                    }
                 }
                 .font(.subheadline)
                 .padding(.horizontal)
@@ -135,7 +144,7 @@ private extension ToolbarsView {
                 VStack {
                     Button {
                         self.model.groupSession?.leave()
-                        self.showSharePlaySubMenu = false
+                        self.isPresentedSharePlaySubMenu = false
                     } label: {
                         Text("Leave the activity")
                     }
@@ -148,7 +157,7 @@ private extension ToolbarsView {
                 VStack {
                     Button("End the activity") {
                         self.model.groupSession?.end()
-                        self.showSharePlaySubMenu = false
+                        self.isPresentedSharePlaySubMenu = false
                     }
                     Text("Everyone will leave the activity.")
                         .font(.subheadline)

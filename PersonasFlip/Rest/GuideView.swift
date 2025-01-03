@@ -13,7 +13,7 @@ struct GuideView: View {
                     NavigationLink("What's Persona?") { Self.whatsPersonaMenu() }
                 }
                 Section {
-                    if self.isEligibleForGroupSession {
+                    if self.groupStateObserver.isEligibleForGroupSession {
                         Text("You are currently connected with a friend. Join an activity launched by your friend, or launch an activity by yourself.")
                         Text("If your friend has already started game activity, you can join the activity from the Control Center.")
                     }
@@ -39,30 +39,14 @@ struct GuideView: View {
         }
         .frame(width: 1000, height: 700)
         .glassBackgroundEffect()
-        .opacity(self.showGuide ? 1 : 0)
-        .animation(.default, value: self.showGuide)
-        .animation(.default, value: self.isEligibleForGroupSession)
+        .opacity(self.model.groupSession == nil ? 1 : 0)
+        .animation(.default, value: self.model.groupSession == nil)
+        .animation(.default, value: self.groupStateObserver.isEligibleForGroupSession)
         .offset(z: -(Size.board / 2))
     }
 }
 
 private extension GuideView {
-    var showGuide: Bool {
-#if targetEnvironment(simulator)
-        true
-//        false
-#else
-        self.model.groupSession == nil
-#endif
-    }
-    var isEligibleForGroupSession: Bool {
-#if targetEnvironment(simulator)
-        true
-//        false
-#else
-        self.groupStateObserver.isEligibleForGroupSession
-#endif
-    }
     private static func whatsSharePlayMenu() -> some View {
         List {
             HStack(spacing: 28) {
