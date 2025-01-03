@@ -1,21 +1,21 @@
-PersonaReversi
+PersonasFlip
 ==============
 __Platform: Apple Vision Pro__
 
 _Reversi for Spatial SharePlay_
 
-<img src="PersonaReversi/Supporting files/README assets/icon.png" width="64">
+<img src="PersonasFlip/Supporting files/README assets/icon.png" width="64">
 
 <a href="https://apps.apple.com/app/id6480587175" target="blank">
-    <img src="PersonaReversi/Supporting files/README assets/appstore_badge.svg">
+    <img src="PersonasFlip/Supporting files/README assets/appstore_badge.svg">
 </a>
 
-<img src="PersonaReversi/Supporting files/README assets/screenshot1280w.jpg" width="640">
+<img src="PersonasFlip/Supporting files/README assets/screenshot1280w.jpg" width="640">
 
 
 Description
 ------------
-Reversi with Spatial Personas.
+Flip board game with Spatial Personas.
 
 - Simple design.
 
@@ -31,7 +31,7 @@ Notice
 - The persona appears as part of FaceTime/SharePlay.
 
 
-<img src="PersonaReversi/Supporting files/README assets/preview400w.gif" width="400">
+<img src="PersonasFlip/Supporting files/README assets/preview400w.gif" width="400">
 
 
 App Store link
@@ -52,10 +52,10 @@ Promotion Video
 
 Source code link
 -----------------
-[github.com/FlipByBlink/PersonaReversi](https://github.com/FlipByBlink/PersonaReversi)
+[github.com/FlipByBlink/PersonasFlip](https://github.com/FlipByBlink/PersonasFlip)
 
 ### Source code (Mirror) link
-[gitlab.com/FlipByBlink/PersonaReversi_Mirror](https://gitlab.com/FlipByBlink/PersonaReversi_Mirror)
+[gitlab.com/FlipByBlink/PersonasFlip_Mirror](https://gitlab.com/FlipByBlink/PersonasFlip_Mirror)
 
 
 <br>
@@ -92,6 +92,6 @@ This application don't collect user infomation.
 
 
 <!-- URL "Support page for App Store" -->
-<!-- https://flipbyblink.github.io/PersonaReversi/ -->
+<!-- https://flipbyblink.github.io/PersonasFlip/ -->
 <!-- URL "Privacy Policy for App Store" -->
-<!-- https://flipbyblink.github.io/PersonaReversi/#privacy-policy-for-app-store -->
+<!-- https://flipbyblink.github.io/PersonasFlip/#privacy-policy-for-app-store -->

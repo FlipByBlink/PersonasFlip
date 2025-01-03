@@ -23,7 +23,7 @@ struct GuideView: View {
                 }
             }
             .font(.title3)
-            .navigationTitle("PersonaReversi")
+            .navigationTitle("PersonasFlip")
             .toolbar {
                 NavigationLink {
                     List { ℹ️AboutAppContent() }

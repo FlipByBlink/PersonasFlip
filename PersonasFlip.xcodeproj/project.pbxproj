@@ -135,7 +135,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1601FF042B4AA8BA0050457E /* PersonaReversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaReversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1601FF042B4AA8BA0050457E /* PersonasFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonasFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1601FF082B4AA8BA0050457E /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		1601FF0B2B4AA8BA0050457E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1601FF0D2B4AA8BA0050457E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 		16C4CE2D2B54AF30002260A6 /* 👤Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "👤Message.swift"; sourceTree = "<group>"; };
 		16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "👤GroupActivity.swift"; sourceTree = "<group>"; };
 		16CDEE982B4D0B3500664815 /* 👤Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "👤Registration.swift"; sourceTree = "<group>"; };
-		16CDEE9B2B4D0C6E00664815 /* PersonaReversi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonaReversi.entitlements; sourceTree = "<group>"; };
-		16CDEEA02B4D0FBF00664815 /* PersonaReversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaReversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CDEE9B2B4D0C6E00664815 /* PersonasFlip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonasFlip.entitlements; sourceTree = "<group>"; };
+		16CDEEA02B4D0FBF00664815 /* PersonasFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonasFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CDEEA22B4D0FBF00664815 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		16CDEEA42B4D0FBF00664815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16CDEEA62B4D0FC100664815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				16EF41352B5BF445002312FA /* README.md */,
-				1601FF062B4AA8BA0050457E /* PersonaReversi */,
+				1601FF062B4AA8BA0050457E /* PersonasFlip */,
 				1601FF072B4AA8BA0050457E /* Packages */,
 				16CDEEA12B4D0FBF00664815 /* iOS for debug */,
 				1601FF052B4AA8BA0050457E /* Products */,
@@ -222,13 +222,13 @@
 		1601FF052B4AA8BA0050457E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1601FF042B4AA8BA0050457E /* PersonaReversi.app */,
-				16CDEEA02B4D0FBF00664815 /* PersonaReversi.app */,
+				1601FF042B4AA8BA0050457E /* PersonasFlip.app */,
+				16CDEEA02B4D0FBF00664815 /* PersonasFlip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1601FF062B4AA8BA0050457E /* PersonaReversi */ = {
+		1601FF062B4AA8BA0050457E /* PersonasFlip */ = {
 			isa = PBXGroup;
 			children = (
 				1601FF0B2B4AA8BA0050457E /* App.swift */,
@@ -240,7 +240,7 @@
 				16C477212B8B22EE00343DD8 /* Rest */,
 				16EF41362B5BF4E6002312FA /* Supporting files */,
 			);
-			path = PersonaReversi;
+			path = PersonasFlip;
 			sourceTree = "<group>";
 		};
 		1601FF072B4AA8BA0050457E /* Packages */ = {
@@ -382,7 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				1601FF142B4AA8BC0050457E /* Info.plist */,
-				16CDEE9B2B4D0C6E00664815 /* PersonaReversi.entitlements */,
+				16CDEE9B2B4D0C6E00664815 /* PersonasFlip.entitlements */,
 				160DC9FD2BBF799F003985D2 /* Assets */,
 				160DC9F22BBF796A003985D2 /* 🌐Localization */,
 				16EF41372B5BF5BF002312FA /* README assets */,
@@ -405,9 +405,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1601FF032B4AA8BA0050457E /* PersonaReversi */ = {
+		1601FF032B4AA8BA0050457E /* PersonasFlip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1601FF172B4AA8BC0050457E /* Build configuration list for PBXNativeTarget "PersonaReversi" */;
+			buildConfigurationList = 1601FF172B4AA8BC0050457E /* Build configuration list for PBXNativeTarget "PersonasFlip" */;
 			buildPhases = (
 				1601FF002B4AA8BA0050457E /* Sources */,
 				1601FF012B4AA8BA0050457E /* Frameworks */,
@@ -418,12 +418,12 @@
 			);
 			dependencies = (
 			);
-			name = PersonaReversi;
+			name = PersonasFlip;
 			packageProductDependencies = (
 				1601FF092B4AA8BA0050457E /* RealityKitContent */,
 			);
 			productName = SpacialReversi;
-			productReference = 1601FF042B4AA8BA0050457E /* PersonaReversi.app */;
+			productReference = 1601FF042B4AA8BA0050457E /* PersonasFlip.app */;
 			productType = "com.apple.product-type.application";
 		};
 		16CDEE9F2B4D0FBF00664815 /* iOS for debug */ = {
@@ -440,7 +440,7 @@
 			);
 			name = "iOS for debug";
 			productName = SR_iOS_debug;
-			productReference = 16CDEEA02B4D0FBF00664815 /* PersonaReversi.app */;
+			productReference = 16CDEEA02B4D0FBF00664815 /* PersonasFlip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -461,7 +461,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1601FEFF2B4AA8BA0050457E /* Build configuration list for PBXProject "PersonaReversi" */;
+			buildConfigurationList = 1601FEFF2B4AA8BA0050457E /* Build configuration list for PBXProject "PersonasFlip" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -475,7 +475,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1601FF032B4AA8BA0050457E /* PersonaReversi */,
+				1601FF032B4AA8BA0050457E /* PersonasFlip */,
 				16CDEE9F2B4D0FBF00664815 /* iOS for debug */,
 			);
 		};
@@ -698,7 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "PersonaReversi/Supporting files/PersonaReversi.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "PersonasFlip/Supporting files/PersonasFlip.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -726,7 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "PersonaReversi/Supporting files/PersonaReversi.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "PersonasFlip/Supporting files/PersonasFlip.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -773,7 +773,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
-				PRODUCT_NAME = PersonaReversi;
+				PRODUCT_NAME = PersonasFlip;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -805,7 +805,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
-				PRODUCT_NAME = PersonaReversi;
+				PRODUCT_NAME = PersonasFlip;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -816,7 +816,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1601FEFF2B4AA8BA0050457E /* Build configuration list for PBXProject "PersonaReversi" */ = {
+		1601FEFF2B4AA8BA0050457E /* Build configuration list for PBXProject "PersonasFlip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1601FF152B4AA8BC0050457E /* Debug */,
@@ -825,7 +825,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1601FF172B4AA8BC0050457E /* Build configuration list for PBXNativeTarget "PersonaReversi" */ = {
+		1601FF172B4AA8BC0050457E /* Build configuration list for PBXNativeTarget "PersonasFlip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1601FF182B4AA8BC0050457E /* Debug */,

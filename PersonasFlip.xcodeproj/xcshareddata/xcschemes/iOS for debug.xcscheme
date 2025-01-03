@@ -4,7 +4,8 @@
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1601FF032B4AA8BA0050457E"
-               BuildableName = "PersonaReversi.app"
-               BlueprintName = "PersonaReversi"
-               ReferencedContainer = "container:PersonaReversi.xcodeproj">
+               BlueprintIdentifier = "16CDEE9F2B4D0FBF00664815"
+               BuildableName = "PersonasFlip.app"
+               BlueprintName = "iOS for debug"
+               ReferencedContainer = "container:PersonasFlip.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -43,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1601FF032B4AA8BA0050457E"
-            BuildableName = "PersonaReversi.app"
-            BlueprintName = "PersonaReversi"
-            ReferencedContainer = "container:PersonaReversi.xcodeproj">
+            BlueprintIdentifier = "16CDEE9F2B4D0FBF00664815"
+            BuildableName = "PersonasFlip.app"
+            BlueprintName = "iOS for debug"
+            ReferencedContainer = "container:PersonasFlip.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -60,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1601FF032B4AA8BA0050457E"
-            BuildableName = "PersonaReversi.app"
-            BlueprintName = "PersonaReversi"
-            ReferencedContainer = "container:PersonaReversi.xcodeproj">
+            BlueprintIdentifier = "16CDEE9F2B4D0FBF00664815"
+            BuildableName = "PersonasFlip.app"
+            BlueprintName = "iOS for debug"
+            ReferencedContainer = "container:PersonasFlip.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

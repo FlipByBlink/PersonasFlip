@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum 🗒️StaticInfo {
-    static let appName: LocalizedStringResource = "PersonaReversi"
+    static let appName: LocalizedStringResource = "PersonasFlip"
     static var appSubTitle: LocalizedStringResource { "Apple Vision Pro" }
     
     static let appStoreProductURL: URL = .init(string: "https://apps.apple.com/app/id6480587175")!
@@ -19,8 +19,8 @@ enum 🗒️StaticInfo {
         このアプリ自身において、ユーザーの情報を一切収集しません。
         """
     
-    static let webRepositoryURL: URL = .init(string: "https://github.com/FlipByBlink/PersonaReversi")!
-    static let webMirrorRepositoryURL: URL = .init(string: "https://gitlab.com/FlipByBlink/PersonaReversi_Mirror")!
+    static let webRepositoryURL: URL = .init(string: "https://github.com/FlipByBlink/PersonasFlip")!
+    static let webMirrorRepositoryURL: URL = .init(string: "https://gitlab.com/FlipByBlink/PersonasFlip_Mirror")!
 
     static let versionInfos: [(version: String, date: String)] = [("1.0.1", "2024-07-24"),
                                                                   ("1.0", "2024-04-22")] //降順。先頭の方が新しい

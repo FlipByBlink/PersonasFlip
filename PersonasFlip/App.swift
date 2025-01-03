@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PersonaReversiApp: App {
+struct PersonasFlipApp: App {
     @StateObject private var model = 🥽AppModel()
     var body: some Scene {
         WindowGroup {

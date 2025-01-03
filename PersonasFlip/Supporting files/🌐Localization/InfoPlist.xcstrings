@@ -8,13 +8,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "PersonaReversi"
+            "value" : "PersonasFlip"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ペルソナリバーシ"
+            "value" : "ペルソナフリップ"
           }
         }
       }

@@ -171,15 +171,8 @@
         }
       }
     },
-    "PersonaReversi" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ペルソナリバーシ"
-          }
-        }
-      }
+    "PersonasFlip" : {
+
     },
     "Reset" : {
       "localizations" : {
