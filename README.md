@@ -2,7 +2,7 @@ PersonasFlip
 ==============
 __Platform: Apple Vision Pro__
 
-_Reversi for Spatial SharePlay_
+_Flip Board Game for Spatial SharePlay_
 
 <img src="PersonasFlip/Supporting files/README assets/icon.png" width="64">
 
@@ -29,6 +29,9 @@ Notice
 - You must set up your persona on the OS beforehand.
 
 - The persona appears as part of FaceTime/SharePlay.
+
+
+Keywords: Reversi, Othello, Board game
 
 
 <img src="PersonasFlip/Supporting files/README assets/preview400w.gif" width="400">

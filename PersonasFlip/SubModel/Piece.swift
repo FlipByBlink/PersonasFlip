@@ -14,7 +14,7 @@ extension Piece: Codable, Equatable {
              slideUp,
              flip
     }
-    var angle: Angle {
+    var angle: Angle2D {
         .degrees(self.side == .black ? 180 : 0)
     }
     var zOffset: Double {

@@ -111,12 +111,12 @@
         }
       }
     },
-    "If your friend has already started reversi activity, you can join the activity from the Control Center." : {
+    "If your friend has already started game activity, you can join the activity from the Control Center." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "友達が既に「リバーシを共有」アクティビティを起動している場合は、コントロールセンターからアクティビティに参加しましょう。"
+            "value" : "友達が既に「ゲームをプレイ」アクティビティを起動している場合は、コントロールセンターからアクティビティに参加しましょう。"
           }
         }
       }
@@ -172,7 +172,24 @@
       }
     },
     "PersonasFlip" : {
-
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ペルソナフリップ"
+          }
+        }
+      }
+    },
+    "Play game" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ゲームをプレイ"
+          }
+        }
+      }
     },
     "Reset" : {
       "localizations" : {
@@ -194,16 +211,6 @@
         }
       }
     },
-    "Share reversi" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リバーシを共有"
-          }
-        }
-      }
-    },
     "SharePlay state:" : {
       "localizations" : {
         "ja" : {
@@ -214,12 +221,12 @@
         }
       }
     },
-    "Start \"Share reversi\" activity" : {
+    "Start \"Play game\" activity" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "「リバーシを共有」アクティビティを開始"
+            "value" : "「ゲームをプレイ」アクティビティを開始"
           }
         }
       }
@@ -284,12 +291,12 @@
         }
       }
     },
-    "With SharePlay in the FaceTime app, you can play reversi in sync with friends and family while on a FaceTime call together. Enjoy a real-time connection with others on the call—with synced game and shared controls, you see and hear the same moments at the same time." : {
+    "With SharePlay in the FaceTime app, you can play game in sync with friends and family while on a FaceTime call together. Enjoy a real-time connection with others on the call—with synced game and shared controls, you see and hear the same moments at the same time." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "FaceTime App でSharePlayを使用すると、友達や家族とのFaceTime通話中にリバーシを同期した状態でプレイすることができます。通話に参加しているほかの人とリアルタイムにつながって楽しみましょう。操作が共有されるため、同時に同じ瞬間を見たり聞いたりできます。"
+            "value" : "FaceTime App でSharePlayを使用すると、友達や家族とのFaceTime通話中にゲームを同期した状態でプレイすることができます。通話に参加しているほかの人とリアルタイムにつながって楽しみましょう。操作が共有されるため、同時に同じ瞬間を見たり聞いたりできます。"
           }
         }
       }

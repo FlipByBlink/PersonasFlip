@@ -82,7 +82,7 @@ private extension ToolbarsView {
                 .frame(height: Size.toolbarHeight)
                 .glassBackgroundEffect()
             }
-            .rotation3DEffect(.degrees(20), axis: .x)
+            .rotation3DEffect(.init(angle: .degrees(20), axis: .x))
             .overlay(alignment: .bottom) {
                 if self.showSharePlaySubMenu { self.sharePlaySubMenu() }
             }

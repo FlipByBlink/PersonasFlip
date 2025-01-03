@@ -233,7 +233,7 @@ private struct 📓SourceCodeLink: View {
             Section {
                 ForEach(self.category.fileNames, id: \.self) { ⓕileName in
                     let ⓤrl = 📓sourceCodeFolderURL.appendingPathComponent(ⓕileName)
-                    if let ⓒode = try? String(contentsOf: ⓤrl) {
+                    if let ⓒode = try? String(contentsOf: ⓤrl, encoding: .utf8) {
                         NavigationLink(ⓕileName) { self.sourceCodeView(ⓒode, ⓕileName) }
                     } else {
                         Text(verbatim: "🐛")
@@ -360,7 +360,7 @@ private struct 🧑‍💻AboutDeveloperPublisherLink: View {
                 } footer: {
                     Text("Taken on 2021-11", tableName: "🌐AboutApp")
                 }
-                Self.jobHuntSection()
+//                Self.jobHuntSection()
             }
             .navigationTitle(.init("Developer / Publisher", tableName: "🌐AboutApp"))
         } label: {

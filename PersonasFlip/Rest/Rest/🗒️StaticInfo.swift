@@ -22,7 +22,8 @@ enum 🗒️StaticInfo {
     static let webRepositoryURL: URL = .init(string: "https://github.com/FlipByBlink/PersonasFlip")!
     static let webMirrorRepositoryURL: URL = .init(string: "https://gitlab.com/FlipByBlink/PersonasFlip_Mirror")!
 
-    static let versionInfos: [(version: String, date: String)] = [("1.0.1", "2024-07-24"),
+    static let versionInfos: [(version: String, date: String)] = [("1.1", "2025-01-03"),
+                                                                  ("1.0.1", "2024-07-24"),
                                                                   ("1.0", "2024-04-22")] //降順。先頭の方が新しい
     
     enum SourceCodeCategory: String, CaseIterable, Identifiable {
@@ -30,7 +31,7 @@ enum 🗒️StaticInfo {
              AppModel,
              SharePlay,
              SubModel,
-             ReversiView,
+             GameView,
              Rest
         var id: Self { self }
         var fileNames: [String] {
@@ -41,7 +42,7 @@ enum 🗒️StaticInfo {
                 ]
                 case .AppModel: [
                     "🥽AppModel.swift",
-                    "🥽reversi.swift",
+                    "🥽game.swift",
                     "🥽sharePlay.swift",
                     "🥽rest.swift",
                     "🥽debug.swift"
@@ -59,8 +60,8 @@ enum 🗒️StaticInfo {
                     "Side.swift",
                     "Mode.swift"
                 ]
-                case .ReversiView: [
-                    "ReversiView.swift",
+                case .GameView: [
+                    "GameView.swift",
                     "ToolbarsView.swift",
                     "ResultView.swift",
                     "BoardView.swift",

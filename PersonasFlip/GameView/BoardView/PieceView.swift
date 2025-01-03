@@ -14,7 +14,7 @@ struct PieceView: View {
         } placeholder: {
             Color.clear
         }
-        .rotation3DEffect(self.piece.angle, axis: .y)
+        .rotation3DEffect(.init(angle: self.piece.angle, axis: .y))
         .offset(z: self.piece.zOffset)
         .padding(12)
         .background {

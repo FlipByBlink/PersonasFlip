@@ -9,7 +9,7 @@ enum 👤Registration {
         configuration.metadataProvider = { key in
             guard key == .linkPresentationMetadata else { return nil }
             let metadata = LPLinkMetadata()
-            metadata.title = String(localized: "Share reversi")
+            metadata.title = String(localized: "Play game")
             metadata.imageProvider = NSItemProvider(object: UIImage(resource: .whole))
             return metadata
         }

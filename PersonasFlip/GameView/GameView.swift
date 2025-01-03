@@ -1,7 +1,7 @@
 import SwiftUI
 import RealityKit
 
-struct ReversiView: View {
+struct GameView: View {
     @EnvironmentObject var model: 🥽AppModel
     @Environment(\.physicalMetrics) var physicalMetrics
     var body: some View {

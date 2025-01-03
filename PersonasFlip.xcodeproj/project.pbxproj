@@ -23,7 +23,7 @@
 		160DCA072BBFB4F7003985D2 /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1601FF0D2B4AA8BA0050457E /* ContentView.swift */; };
 		160DCA082BBFB4F7003985D2 /* 🥽AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED79B2B4B827E002AD987 /* 🥽AppModel.swift */; };
 		160DCA092BBFB4F7003985D2 /* 🥽sharePlay.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C477182B8B191C00343DD8 /* 🥽sharePlay.swift */; };
-		160DCA0A2BBFB4F7003985D2 /* 🥽reversi.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽reversi.swift */; };
+		160DCA0A2BBFB4F7003985D2 /* 🥽game.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽game.swift */; };
 		160DCA0B2BBFB4F7003985D2 /* 🥽rest.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EDF05A2B8C41C10096217A /* 🥽rest.swift */; };
 		160DCA0C2BBFB4F7003985D2 /* 🥽debug.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4771E2B8B195600343DD8 /* 🥽debug.swift */; };
 		160DCA0D2BBFB4F7003985D2 /* 👤GroupActivity.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */; };
@@ -34,7 +34,7 @@
 		160DCA122BBFB4F7003985D2 /* Piece.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED7A52B4CC15A002AD987 /* Piece.swift */; };
 		160DCA132BBFB4F7003985D2 /* Side.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED7992B4B8147002AD987 /* Side.swift */; };
 		160DCA152BBFB4F7003985D2 /* Mode.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16D237BB2B90975700282592 /* Mode.swift */; };
-		160DCA162BBFB4F7003985D2 /* ReversiView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EDF0562B8C3E7B0096217A /* ReversiView.swift */; };
+		160DCA162BBFB4F7003985D2 /* GameView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EDF0562B8C3E7B0096217A /* GameView.swift */; };
 		160DCA172BBFB4F7003985D2 /* ToolbarsView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED7A72B4CC20D002AD987 /* ToolbarsView.swift */; };
 		160DCA182BBFB4F7003985D2 /* ResultView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C158A62B4CEA2B00835A85 /* ResultView.swift */; };
 		160DCA192BBFB4F7003985D2 /* BoardView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED7A92B4CCC16002AD987 /* BoardView.swift */; };
@@ -68,8 +68,8 @@
 		16C158AB2B4D05F000835A85 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C158AA2B4D05F000835A85 /* PieceView.swift */; };
 		16C477192B8B191C00343DD8 /* 🥽sharePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C477182B8B191C00343DD8 /* 🥽sharePlay.swift */; };
 		16C4771A2B8B191C00343DD8 /* 🥽sharePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C477182B8B191C00343DD8 /* 🥽sharePlay.swift */; };
-		16C4771C2B8B193100343DD8 /* 🥽reversi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽reversi.swift */; };
-		16C4771D2B8B193100343DD8 /* 🥽reversi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽reversi.swift */; };
+		16C4771C2B8B193100343DD8 /* 🥽game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽game.swift */; };
+		16C4771D2B8B193100343DD8 /* 🥽game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽game.swift */; };
 		16C4771F2B8B195600343DD8 /* 🥽debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771E2B8B195600343DD8 /* 🥽debug.swift */; };
 		16C477202B8B195600343DD8 /* 🥽debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771E2B8B195600343DD8 /* 🥽debug.swift */; };
 		16C4CE2E2B54AF30002260A6 /* 👤Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4CE2D2B54AF30002260A6 /* 👤Message.swift */; };
@@ -89,7 +89,7 @@
 		16D237BC2B90975900282592 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D237BB2B90975700282592 /* Mode.swift */; };
 		16D237BD2B90975900282592 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D237BB2B90975700282592 /* Mode.swift */; };
 		16E8495C2BCB79D2009E8F98 /* 👤Registration.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16CDEE982B4D0B3500664815 /* 👤Registration.swift */; };
-		16EDF0572B8C3E7B0096217A /* ReversiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EDF0562B8C3E7B0096217A /* ReversiView.swift */; };
+		16EDF0572B8C3E7B0096217A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EDF0562B8C3E7B0096217A /* GameView.swift */; };
 		16EDF05B2B8C41C10096217A /* 🥽rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EDF05A2B8C41C10096217A /* 🥽rest.swift */; };
 		16EDF05C2B8C4AFF0096217A /* 🥽rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EDF05A2B8C41C10096217A /* 🥽rest.swift */; };
 /* End PBXBuildFile section */
@@ -106,7 +106,7 @@
 				160DCA072BBFB4F7003985D2 /* ContentView.swift in CopyFiles */,
 				160DCA082BBFB4F7003985D2 /* 🥽AppModel.swift in CopyFiles */,
 				160DCA092BBFB4F7003985D2 /* 🥽sharePlay.swift in CopyFiles */,
-				160DCA0A2BBFB4F7003985D2 /* 🥽reversi.swift in CopyFiles */,
+				160DCA0A2BBFB4F7003985D2 /* 🥽game.swift in CopyFiles */,
 				160DCA0B2BBFB4F7003985D2 /* 🥽rest.swift in CopyFiles */,
 				160DCA0C2BBFB4F7003985D2 /* 🥽debug.swift in CopyFiles */,
 				160DCA0D2BBFB4F7003985D2 /* 👤GroupActivity.swift in CopyFiles */,
@@ -117,7 +117,7 @@
 				160DCA122BBFB4F7003985D2 /* Piece.swift in CopyFiles */,
 				160DCA132BBFB4F7003985D2 /* Side.swift in CopyFiles */,
 				160DCA152BBFB4F7003985D2 /* Mode.swift in CopyFiles */,
-				160DCA162BBFB4F7003985D2 /* ReversiView.swift in CopyFiles */,
+				160DCA162BBFB4F7003985D2 /* GameView.swift in CopyFiles */,
 				160DCA172BBFB4F7003985D2 /* ToolbarsView.swift in CopyFiles */,
 				160DCA182BBFB4F7003985D2 /* ResultView.swift in CopyFiles */,
 				160DCA192BBFB4F7003985D2 /* BoardView.swift in CopyFiles */,
@@ -169,7 +169,7 @@
 		16C158A62B4CEA2B00835A85 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		16C158AA2B4D05F000835A85 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 		16C477182B8B191C00343DD8 /* 🥽sharePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽sharePlay.swift"; sourceTree = "<group>"; };
-		16C4771B2B8B193100343DD8 /* 🥽reversi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽reversi.swift"; sourceTree = "<group>"; };
+		16C4771B2B8B193100343DD8 /* 🥽game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽game.swift"; sourceTree = "<group>"; };
 		16C4771E2B8B195600343DD8 /* 🥽debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽debug.swift"; sourceTree = "<group>"; };
 		16C4CE2D2B54AF30002260A6 /* 👤Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "👤Message.swift"; sourceTree = "<group>"; };
 		16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "👤GroupActivity.swift"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		16CDEEB52B4D100600664815 /* iOS for debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS for debug.entitlements"; sourceTree = "<group>"; };
 		16D237B82B90972F00282592 /* ActivityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityState.swift; sourceTree = "<group>"; };
 		16D237BB2B90975700282592 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
-		16EDF0562B8C3E7B0096217A /* ReversiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiView.swift; sourceTree = "<group>"; };
+		16EDF0562B8C3E7B0096217A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		16EDF05A2B8C41C10096217A /* 🥽rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽rest.swift"; sourceTree = "<group>"; };
 		16EF41352B5BF445002312FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EF41382B5BF620002312FA /* appstore_badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = appstore_badge.svg; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 				16C477172B8B190400343DD8 /* 🥽AppModel */,
 				16C477162B8B067F00343DD8 /* 👤SharePlay */,
 				16C158A82B4D057B00835A85 /* SubModel */,
-				16C158A92B4D058300835A85 /* ReversiView */,
+				16C158A92B4D058300835A85 /* GameView */,
 				16C477212B8B22EE00343DD8 /* Rest */,
 				16EF41362B5BF4E6002312FA /* Supporting files */,
 			);
@@ -312,15 +312,15 @@
 			path = SubModel;
 			sourceTree = "<group>";
 		};
-		16C158A92B4D058300835A85 /* ReversiView */ = {
+		16C158A92B4D058300835A85 /* GameView */ = {
 			isa = PBXGroup;
 			children = (
-				16EDF0562B8C3E7B0096217A /* ReversiView.swift */,
+				16EDF0562B8C3E7B0096217A /* GameView.swift */,
 				160ED7A72B4CC20D002AD987 /* ToolbarsView.swift */,
 				16C158A62B4CEA2B00835A85 /* ResultView.swift */,
 				16EDF0592B8C40810096217A /* BoardView */,
 			);
-			path = ReversiView;
+			path = GameView;
 			sourceTree = "<group>";
 		};
 		16C477162B8B067F00343DD8 /* 👤SharePlay */ = {
@@ -339,7 +339,7 @@
 			children = (
 				160ED79B2B4B827E002AD987 /* 🥽AppModel.swift */,
 				16C477182B8B191C00343DD8 /* 🥽sharePlay.swift */,
-				16C4771B2B8B193100343DD8 /* 🥽reversi.swift */,
+				16C4771B2B8B193100343DD8 /* 🥽game.swift */,
 				16EDF05A2B8C41C10096217A /* 🥽rest.swift */,
 				16C4771E2B8B195600343DD8 /* 🥽debug.swift */,
 			);
@@ -523,7 +523,7 @@
 				160DCA042BBF79D7003985D2 /* ℹ️AboutApp.swift in Sources */,
 				1601FF0E2B4AA8BA0050457E /* ContentView.swift in Sources */,
 				16D237BC2B90975900282592 /* Mode.swift in Sources */,
-				16C4771C2B8B193100343DD8 /* 🥽reversi.swift in Sources */,
+				16C4771C2B8B193100343DD8 /* 🥽game.swift in Sources */,
 				16C158A72B4CEA2B00835A85 /* ResultView.swift in Sources */,
 				167761C32B8B72340092CB24 /* GuideView.swift in Sources */,
 				160DCA032BBF79D7003985D2 /* 🗒️StaticInfo.swift in Sources */,
@@ -532,7 +532,7 @@
 				16602B302B8ED7C400AF1D4A /* 👤PlaySound.swift in Sources */,
 				16C4771F2B8B195600343DD8 /* 🥽debug.swift in Sources */,
 				16EDF05B2B8C41C10096217A /* 🥽rest.swift in Sources */,
-				16EDF0572B8C3E7B0096217A /* ReversiView.swift in Sources */,
+				16EDF0572B8C3E7B0096217A /* GameView.swift in Sources */,
 				160ED7A62B4CC15A002AD987 /* Piece.swift in Sources */,
 				160ED7A82B4CC20D002AD987 /* ToolbarsView.swift in Sources */,
 				160ED7A22B4CC0F9002AD987 /* SquareView.swift in Sources */,
@@ -565,7 +565,7 @@
 				16CDEEAF2B4D0FF200664815 /* Side.swift in Sources */,
 				16CDEEB02B4D0FF200664815 /* Size.swift in Sources */,
 				16C4CE2F2B54AF30002260A6 /* 👤Message.swift in Sources */,
-				16C4771D2B8B193100343DD8 /* 🥽reversi.swift in Sources */,
+				16C4771D2B8B193100343DD8 /* 🥽game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +718,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -746,6 +747,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};

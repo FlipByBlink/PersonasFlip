@@ -52,8 +52,8 @@ private extension ResultView {
                 }
                 .font(.system(size: 200))
                 .frame(depth: 200)
-                .rotation3DEffect(.degrees(context.date.timeIntervalSince(self.showedDate) * 8),
-                                  axis: .y)
+                .rotation3DEffect(.init(angle: .degrees(context.date.timeIntervalSince(self.showedDate) * 8),
+                                        axis: .y))
             }
             .offset(y: self.yOffset)
             .offset(y: -600)

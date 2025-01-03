@@ -15,7 +15,7 @@ struct GuideView: View {
                 Section {
                     if self.isEligibleForGroupSession {
                         Text("You are currently connected with a friend. Join an activity launched by your friend, or launch an activity by yourself.")
-                        Text("If your friend has already started reversi activity, you can join the activity from the Control Center.")
+                        Text("If your friend has already started game activity, you can join the activity from the Control Center.")
                     }
                 }
                 Section {
@@ -25,14 +25,16 @@ struct GuideView: View {
             .font(.title3)
             .navigationTitle("PersonasFlip")
             .toolbar {
-                NavigationLink {
-                    List { ℹ️AboutAppContent() }
-                } label: {
-                    Label("About App", systemImage: "info")
-                        .padding(14)
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        List { ℹ️AboutAppContent() }
+                    } label: {
+                        Label("About App", systemImage: "info")
+                            .padding(14)
+                    }
+                    .buttonBorderShape(.circle)
+                    .buttonStyle(.plain)
                 }
-                .buttonBorderShape(.circle)
-                .buttonStyle(.plain)
             }
         }
         .frame(width: 1000, height: 700)
@@ -68,7 +70,7 @@ private extension GuideView {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 460)
-                Text("With SharePlay in the FaceTime app, you can play reversi in sync with friends and family while on a FaceTime call together. Enjoy a real-time connection with others on the call—with synced game and shared controls, you see and hear the same moments at the same time.")
+                Text("With SharePlay in the FaceTime app, you can play game in sync with friends and family while on a FaceTime call together. Enjoy a real-time connection with others on the call—with synced game and shared controls, you see and hear the same moments at the same time.")
             }
             .padding()
             let url = URL(string: "https://support.apple.com/guide/apple-vision-pro/use-shareplay-in-facetime-calls-tan15b2c7bf9/1.0/visionos/1.0")!
@@ -120,7 +122,7 @@ private extension GuideView {
                 Button {
                     self.model.activateGroupActivity()
                 } label: {
-                    Label(#"Start "Share reversi" activity"#, systemImage: "play.fill")
+                    Label(#"Start "Play game" activity"#, systemImage: "play.fill")
                         .fontWeight(.semibold)
                 }
                 .disabled(!self.groupStateObserver.isEligibleForGroupSession)

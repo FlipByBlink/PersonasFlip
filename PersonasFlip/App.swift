@@ -9,6 +9,7 @@ struct PersonasFlipApp: App {
                 .environmentObject(self.model)
         }
         .windowStyle(.volumetric)
+        .volumeWorldAlignment(.gravityAligned)
         .defaultSize(width: Size.window,
                      height: Size.window,
                      depth: Size.window)
