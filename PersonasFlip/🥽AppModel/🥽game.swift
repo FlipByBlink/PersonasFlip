@@ -75,6 +75,7 @@ extension 🥽AppModel {
                     }
                     self.sync()
                 } completion: {
+                    self.playSound(.crack)
                     Pieces.preset.keys.forEach {
                         self.activityState.pieces.changePhase($0, .complete)
                     }
