@@ -60,8 +60,13 @@ private extension GuideView {
             let url = URL(string: "https://support.apple.com/guide/apple-vision-pro/use-shareplay-in-facetime-calls-tan15b2c7bf9/1.0/visionos/1.0")!
             Section {
                 Link(destination: url) {
-                    Text(verbatim: #"“Use SharePlay in FaceTime calls on Apple Vision Pro - Apple Support”"#)
+                    Label {
+                        Text(verbatim: #"“Use SharePlay in FaceTime calls on Apple Vision Pro - Apple Support”"#)
+                    } icon: {
+                        Image(systemName: "link")
+                    }
                 }
+                .badge(Text(Image(systemName: "arrow.up.forward.app")))
             } header: {
                 Text("Apple official support page")
             } footer: {
@@ -81,8 +86,13 @@ private extension GuideView {
             let url1 = URL(string: "https://support.apple.com/guide/apple-vision-pro/use-spatial-persona-tana1ea03f18/visionos")!
             Section {
                 Link(destination: url1) {
-                    Text(verbatim: #""Use spatial Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                    Label {
+                        Text(verbatim: #""Use spatial Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                    } icon: {
+                        Image(systemName: "link")
+                    }
                 }
+                .badge(Text(Image(systemName: "arrow.up.forward.app")))
             } header: {
                 Text("Apple official support page")
             } footer: {
@@ -91,8 +101,13 @@ private extension GuideView {
             let url2 = URL(string: "https://support.apple.com/guide/apple-vision-pro/capture-your-persona-beta-dev934d40a17/1.0/visionos/1.0")!
             Section {
                 Link(destination: url2) {
-                    Text(verbatim: #"“Capture and edit your Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                    Label {
+                        Text(verbatim: #"“Capture and edit your Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                    } icon: {
+                        Image(systemName: "link")
+                    }
                 }
+                .badge(Text(Image(systemName: "arrow.up.forward.app")))
             } footer: {
                 Text(verbatim: "\(url2)")
             }
@@ -106,8 +121,13 @@ private extension GuideView {
                 Button {
                     self.model.activateGroupActivity()
                 } label: {
-                    Label(#"Start "Play game" activity"#, systemImage: "play.fill")
-                        .fontWeight(.semibold)
+                    Label {
+                        Text(#"Start "Play game" activity"#)
+                            .opacity(self.groupStateObserver.isEligibleForGroupSession ? 1 : 0.7)
+                    } icon: {
+                        Image(systemName: "play.fill")
+                    }
+                    .fontWeight(.semibold)
                 }
                 .disabled(!self.groupStateObserver.isEligibleForGroupSession)
             } header: {
