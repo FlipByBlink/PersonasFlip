@@ -15,7 +15,9 @@ struct GuideView: View {
                 Section {
                     if self.groupStateObserver.isEligibleForGroupSession {
                         Text("You are currently connected with a friend. Join an activity launched by your friend, or launch an activity by yourself.")
+                            .padding(.vertical, 6)
                         Text("If your friend has already started game activity, you can join the activity from the Control Center.")
+                            .padding(.vertical, 6)
                     }
                 }
                 Section {
@@ -34,6 +36,12 @@ struct GuideView: View {
                     }
                     .buttonBorderShape(.circle)
                     .buttonStyle(.plain)
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
+                if self.groupStateObserver.isEligibleForGroupSession {
+                    self.startActivityButton()
+                        .padding(24)
                 }
             }
         }
@@ -61,7 +69,7 @@ private extension GuideView {
             Section {
                 Link(destination: url) {
                     Label {
-                        Text(verbatim: #"“Use SharePlay in FaceTime calls on Apple Vision Pro - Apple Support”"#)
+                        Text(#"“Use SharePlay in FaceTime calls on Apple Vision Pro - Apple Support”"#)
                     } icon: {
                         Image(systemName: "link")
                     }
@@ -87,7 +95,7 @@ private extension GuideView {
             Section {
                 Link(destination: url1) {
                     Label {
-                        Text(verbatim: #""Use spatial Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                        Text(#""Use spatial Persona (beta) on Apple Vision Pro - Apple Support”"#)
                     } icon: {
                         Image(systemName: "link")
                     }
@@ -102,7 +110,7 @@ private extension GuideView {
             Section {
                 Link(destination: url2) {
                     Label {
-                        Text(verbatim: #"“Capture and edit your Persona (beta) on Apple Vision Pro - Apple Support”"#)
+                        Text(#"“Capture and edit your Persona (beta) on Apple Vision Pro - Apple Support”"#)
                     } icon: {
                         Image(systemName: "link")
                     }
@@ -118,18 +126,9 @@ private extension GuideView {
         List {
             Section {
                 Text("If you launch this application during FaceTime, you can start an activity. When you start an activity, the callers automatically join an activity.")
-                Button {
-                    self.model.activateGroupActivity()
-                } label: {
-                    Label {
-                        Text(#"Start "Play game" activity"#)
-                            .opacity(self.groupStateObserver.isEligibleForGroupSession ? 1 : 0.7)
-                    } icon: {
-                        Image(systemName: "play.fill")
-                    }
-                    .fontWeight(.semibold)
+                if self.groupStateObserver.isEligibleForGroupSession {
+                    self.startActivityButton()
                 }
-                .disabled(!self.groupStateObserver.isEligibleForGroupSession)
             } header: {
                 Text("How to start")
             }
@@ -141,6 +140,14 @@ private extension GuideView {
             } header: {
                 Text("Join SharePlay")
             }
+        }
+    }
+    private func startActivityButton() -> some View {
+        Button {
+            self.model.activateGroupActivity()
+        } label: {
+            Label(#"Start "Play game" activity"#, systemImage: "play.fill")
+                .fontWeight(.semibold)
         }
     }
 }

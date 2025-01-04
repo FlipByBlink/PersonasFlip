@@ -97,7 +97,6 @@ extension 🥽AppModel {
                 }
             } catch {
                 print("Failed activation: \(error)")
-                assertionFailure()
             }
         }
     }

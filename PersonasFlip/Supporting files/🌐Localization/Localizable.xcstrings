@@ -1,6 +1,36 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "“Capture and edit your Persona (beta) on Apple Vision Pro - Apple Support”" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「Apple Vision ProでPersona（ベータ版）を収録する/編集する」"
+          }
+        }
+      }
+    },
+    "“Use SharePlay in FaceTime calls on Apple Vision Pro - Apple Support”" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「Apple Vision ProでのFaceTime通話でSharePlayを使用する」"
+          }
+        }
+      }
+    },
+    "\"Use spatial Persona (beta) on Apple Vision Pro - Apple Support”" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「Apple Vision Proで空間Persona（ベータ版）を使用する」"
+          }
+        }
+      }
+    },
     "About App" : {
       "localizations" : {
         "ja" : {
