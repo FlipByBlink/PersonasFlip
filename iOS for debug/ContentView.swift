@@ -1,17 +1,25 @@
 import SwiftUI
+import GroupActivities
 
 struct ContentView: View {
     @EnvironmentObject var model: 🥽AppModel
+    @StateObject private var groupStateObserver = GroupStateObserver()
     var body: some View {
         VStack {
             BoardView()
-            HStack {
+            HStack(spacing: 18) {
                 Picker("Side", selection: self.$model.side) {
                     Text("White").tag(Side.white)
                     Text("Black").tag(Side.black)
                 }
                 Button("reset") {
                     self.model.reset()
+                }
+                if self.groupStateObserver.isEligibleForGroupSession {
+                    Button("Start activity") {
+                        self.model.activateGroupActivity()
+                    }
+                    .buttonStyle(.borderedProminent)
                 }
             }
         }
