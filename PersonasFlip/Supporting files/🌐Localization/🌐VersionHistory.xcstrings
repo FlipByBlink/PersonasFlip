@@ -1,0 +1,57 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Initial release"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1回目のリリース"
+          }
+        }
+      }
+    },
+    "1.0.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a button to start SharePlay."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SharePlayを開始するためのボタンを追加しました。"
+          }
+        }
+      }
+    },
+    "1.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- Change app name to “PersonasFlip” from “PersonaReversi”.\n- Support visionOS 2.x.\n- Unsupport visionOS 1.x."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "・アプリ名を「ペルソナリバーシ」から「ペルソナフリップ」に変更しました。\n・visionOS 2.xをサポートしました。\n・visionOS 1.xを非対応にしました。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
