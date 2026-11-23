@@ -51,7 +51,7 @@ enum 🗒️StaticInfo {
                     "🥽debug.swift"
                 ]
                 case .SharePlay: [
-                    "👤GroupActivity.swift",
+                    "PersonasFlipGroupActivity.swift",
                     "👤Message.swift",
                     "👤PlaySound.swift",
                     "👤Registration.swift"
