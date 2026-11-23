@@ -76,6 +76,11 @@ private extension GuideView {
             } header: {
                 Text("About data")
             }
+            Section {
+                Text("An issue occurred where SharePlay did not work properly in app ver1.2 and earlier. A fix patch has been applied in ver1.2.1. Please update everyone's app to the latest version when using SharePlay.")
+            } header: {
+                Text("Issue in ver1.2 and earlier")
+            }
         }
         .navigationTitle("What's SharePlay?")
     }

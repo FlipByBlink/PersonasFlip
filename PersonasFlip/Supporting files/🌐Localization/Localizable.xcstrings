@@ -61,6 +61,16 @@
         }
       }
     },
+    "An issue occurred where SharePlay did not work properly in app ver1.2 and earlier. A fix patch has been applied in ver1.2.1. Please update everyone's app to the latest version when using SharePlay." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ver1.2以前のアプリでSharePlayが適切に動作しない不具合が発生していました。ver1.2.1で修正パッチを当てました。SharePlayする際は全員のアプリを最新バージョンにアップデートしてください。"
+          }
+        }
+      }
+    },
     "Apple official support page" : {
       "localizations" : {
         "ja" : {
@@ -157,6 +167,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "無効(%@)"
+          }
+        }
+      }
+    },
+    "Issue in ver1.2 and earlier" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ver1.2以前の不具合"
           }
         }
       }
