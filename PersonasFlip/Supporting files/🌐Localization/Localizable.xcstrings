@@ -41,6 +41,16 @@
         }
       }
     },
+    "About an issue in ver1.2 and earlier..." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ver1.2以前の不具合について…"
+          }
+        }
+      }
+    },
     "About App" : {
       "localizations" : {
         "ja" : {

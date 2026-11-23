@@ -29,6 +29,9 @@ struct GuideView: View {
                     .buttonBorderShape(.circle)
                     .buttonStyle(.plain)
                 }
+                ToolbarItem(placement: .bottomBar) {
+                    self.aboutVer1_2IssueMenuLink()
+                }
             }
             .safeAreaInset(edge: .bottom) {
                 if self.groupStateObserver.isEligibleForGroupSession {
@@ -75,11 +78,6 @@ private extension GuideView {
                 Text("The Group Activities framework uses end-to-end encryption on all session data. Developer and Apple doesn’t have the keys to decrypt this data.")
             } header: {
                 Text("About data")
-            }
-            Section {
-                Text("An issue occurred where SharePlay did not work properly in app ver1.2 and earlier. A fix patch has been applied in ver1.2.1. Please update everyone's app to the latest version when using SharePlay.")
-            } header: {
-                Text("Issue in ver1.2 and earlier")
             }
         }
         .navigationTitle("What's SharePlay?")
@@ -147,6 +145,24 @@ private extension GuideView {
                 Text("Join SharePlay")
             }
         }
+    }
+    private func aboutVer1_2IssueMenuLink() -> some View {
+        NavigationLink {
+            List {
+                Section {
+                    Text("An issue occurred where SharePlay did not work properly in app ver1.2 and earlier. A fix patch has been applied in ver1.2.1. Please update everyone's app to the latest version when using SharePlay.")
+                } header: {
+                    Text("Issue in ver1.2 and earlier")
+                }
+            }
+        } label: {
+            Text("About an issue in ver1.2 and earlier...")
+                .padding(8)
+                .font(.subheadline)
+                .underline()
+        }
+        .foregroundStyle(.secondary)
+        .buttonStyle(.plain)
     }
     private func startActivityButton() -> some View {
         Button {
