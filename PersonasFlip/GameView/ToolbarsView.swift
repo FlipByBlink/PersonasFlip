@@ -87,7 +87,7 @@ private extension ToolbarsView {
         }
         private struct SharePlaySubMenuButton: View {
             @EnvironmentObject var model: 🥽AppModel
-            @ObservedObject var groupSession: GroupSession<👤GroupActivity>
+            @ObservedObject var groupSession: GroupSession<PersonasFlipGroupActivity>
             @Binding var isPresented: Bool
             var body: some View {
                 if [.waiting, .joined].contains(self.groupSession.state) {
@@ -111,7 +111,7 @@ private extension ToolbarsView {
             }
         }
         private struct SharePlayStateView: View {
-            @ObservedObject var groupSession: GroupSession<👤GroupActivity>
+            @ObservedObject var groupSession: GroupSession<PersonasFlipGroupActivity>
             var body: some View {
                 Text({
                     switch self.groupSession.state {

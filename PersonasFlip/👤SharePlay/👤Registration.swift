@@ -3,7 +3,7 @@ import LinkPresentation
 enum 👤Registration {
     static func execute() {
         let itemProvider = NSItemProvider()
-        itemProvider.registerGroupActivity(👤GroupActivity())
+        itemProvider.registerGroupActivity(PersonasFlipGroupActivity())
         
         let configuration = UIActivityItemsConfiguration(itemProviders: [itemProvider])
         configuration.metadataProvider = { key in

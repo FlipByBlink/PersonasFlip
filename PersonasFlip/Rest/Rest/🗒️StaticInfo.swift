@@ -23,6 +23,7 @@ enum 🗒️StaticInfo {
     static let webMirrorRepositoryURL: URL = .init(string: "https://gitlab.com/FlipByBlink/PersonasFlip_Mirror")!
 
     static let versionInfos: [(version: String, date: String)] = [
+        ("1.2.1", "2026-11-23"),
         ("1.2", "2025-12-30"),
         ("1.1", "2025-01-03"),
         ("1.0.1", "2024-07-24"),
@@ -51,7 +52,7 @@ enum 🗒️StaticInfo {
                     "🥽debug.swift"
                 ]
                 case .SharePlay: [
-                    "👤GroupActivity.swift",
+                    "PersonasFlipGroupActivity.swift",
                     "👤Message.swift",
                     "👤PlaySound.swift",
                     "👤Registration.swift"

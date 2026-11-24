@@ -68,6 +68,23 @@
           }
         }
       }
+    },
+    "1.2.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applied a fix patch for the issue where SharePlay does not work. When using SharePlay, please update everyone's app to the latest version."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SharePlayが適切に動作しない不具合を修正しました。SharePlayする際は全員のアプリを最新バージョンにアップデートしてください。"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

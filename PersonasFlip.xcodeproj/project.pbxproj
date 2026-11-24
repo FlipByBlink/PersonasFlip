@@ -26,7 +26,7 @@
 		160DCA0A2BBFB4F7003985D2 /* 🥽game.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4771B2B8B193100343DD8 /* 🥽game.swift */; };
 		160DCA0B2BBFB4F7003985D2 /* 🥽rest.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16EDF05A2B8C41C10096217A /* 🥽rest.swift */; };
 		160DCA0C2BBFB4F7003985D2 /* 🥽debug.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4771E2B8B195600343DD8 /* 🥽debug.swift */; };
-		160DCA0D2BBFB4F7003985D2 /* 👤GroupActivity.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */; };
+		160DCA0D2BBFB4F7003985D2 /* PersonasFlipGroupActivity.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* PersonasFlipGroupActivity.swift */; };
 		160DCA0E2BBFB4F7003985D2 /* 👤Message.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C4CE2D2B54AF30002260A6 /* 👤Message.swift */; };
 		160DCA0F2BBFB4F7003985D2 /* 👤PlaySound.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16602B2F2B8ED7C400AF1D4A /* 👤PlaySound.swift */; };
 		160DCA102BBFB4F7003985D2 /* ActivityState.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16D237B82B90972F00282592 /* ActivityState.swift */; };
@@ -74,14 +74,14 @@
 		16C477202B8B195600343DD8 /* 🥽debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4771E2B8B195600343DD8 /* 🥽debug.swift */; };
 		16C4CE2E2B54AF30002260A6 /* 👤Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4CE2D2B54AF30002260A6 /* 👤Message.swift */; };
 		16C4CE2F2B54AF30002260A6 /* 👤Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4CE2D2B54AF30002260A6 /* 👤Message.swift */; };
-		16CDEE992B4D0B3500664815 /* 👤GroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */; };
+		16CDEE992B4D0B3500664815 /* PersonasFlipGroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* PersonasFlipGroupActivity.swift */; };
 		16CDEEA32B4D0FBF00664815 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEEA22B4D0FBF00664815 /* App.swift */; };
 		16CDEEA52B4D0FBF00664815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEEA42B4D0FBF00664815 /* ContentView.swift */; };
 		16CDEEA72B4D0FC100664815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CDEEA62B4D0FC100664815 /* Assets.xcassets */; };
 		16CDEEAF2B4D0FF200664815 /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7992B4B8147002AD987 /* Side.swift */; };
 		16CDEEB02B4D0FF200664815 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED79F2B4BB705002AD987 /* Size.swift */; };
 		16CDEEB12B4D0FF200664815 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7A52B4CC15A002AD987 /* Piece.swift */; };
-		16CDEEB22B4D0FF200664815 /* 👤GroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */; };
+		16CDEEB22B4D0FF200664815 /* PersonasFlipGroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CDEE972B4D0B3500664815 /* PersonasFlipGroupActivity.swift */; };
 		16CDEEB32B4D0FF200664815 /* Pieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7A32B4CC153002AD987 /* Pieces.swift */; };
 		16CDEEB42B4D0FF200664815 /* 🥽AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED79B2B4B827E002AD987 /* 🥽AppModel.swift */; };
 		16D237B92B90973000282592 /* ActivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D237B82B90972F00282592 /* ActivityState.swift */; };
@@ -109,7 +109,7 @@
 				160DCA0A2BBFB4F7003985D2 /* 🥽game.swift in CopyFiles */,
 				160DCA0B2BBFB4F7003985D2 /* 🥽rest.swift in CopyFiles */,
 				160DCA0C2BBFB4F7003985D2 /* 🥽debug.swift in CopyFiles */,
-				160DCA0D2BBFB4F7003985D2 /* 👤GroupActivity.swift in CopyFiles */,
+				160DCA0D2BBFB4F7003985D2 /* PersonasFlipGroupActivity.swift in CopyFiles */,
 				160DCA0E2BBFB4F7003985D2 /* 👤Message.swift in CopyFiles */,
 				160DCA0F2BBFB4F7003985D2 /* 👤PlaySound.swift in CopyFiles */,
 				160DCA102BBFB4F7003985D2 /* ActivityState.swift in CopyFiles */,
@@ -171,7 +171,7 @@
 		16C4771B2B8B193100343DD8 /* 🥽game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽game.swift"; sourceTree = "<group>"; };
 		16C4771E2B8B195600343DD8 /* 🥽debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽debug.swift"; sourceTree = "<group>"; };
 		16C4CE2D2B54AF30002260A6 /* 👤Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "👤Message.swift"; sourceTree = "<group>"; };
-		16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "👤GroupActivity.swift"; sourceTree = "<group>"; };
+		16CDEE972B4D0B3500664815 /* PersonasFlipGroupActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonasFlipGroupActivity.swift; sourceTree = "<group>"; };
 		16CDEE982B4D0B3500664815 /* 👤Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "👤Registration.swift"; sourceTree = "<group>"; };
 		16CDEE9B2B4D0C6E00664815 /* PersonasFlip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonasFlip.entitlements; sourceTree = "<group>"; };
 		16CDEEA02B4D0FBF00664815 /* PersonasFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonasFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,7 +332,7 @@
 		16C477162B8B067F00343DD8 /* 👤SharePlay */ = {
 			isa = PBXGroup;
 			children = (
-				16CDEE972B4D0B3500664815 /* 👤GroupActivity.swift */,
+				16CDEE972B4D0B3500664815 /* PersonasFlipGroupActivity.swift */,
 				16C4CE2D2B54AF30002260A6 /* 👤Message.swift */,
 				16602B2F2B8ED7C400AF1D4A /* 👤PlaySound.swift */,
 				16CDEE982B4D0B3500664815 /* 👤Registration.swift */,
@@ -463,7 +463,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					1601FF032B4AA8BA0050457E = {
 						CreatedOnToolsVersion = 15.2;
@@ -527,7 +527,7 @@
 				16D237B92B90973000282592 /* ActivityState.swift in Sources */,
 				160ED7AA2B4CCC17002AD987 /* BoardView.swift in Sources */,
 				16C477192B8B191C00343DD8 /* 🥽sharePlay.swift in Sources */,
-				16CDEE992B4D0B3500664815 /* 👤GroupActivity.swift in Sources */,
+				16CDEE992B4D0B3500664815 /* PersonasFlipGroupActivity.swift in Sources */,
 				160ED7A42B4CC153002AD987 /* Pieces.swift in Sources */,
 				16253CFF2B4E37B20028F0E2 /* SoundFeedback.swift in Sources */,
 				160ED7A02B4BB705002AD987 /* Size.swift in Sources */,
@@ -569,7 +569,7 @@
 				16D237BD2B90975900282592 /* Mode.swift in Sources */,
 				16253D002B4E37B20028F0E2 /* SoundFeedback.swift in Sources */,
 				16CDEEA52B4D0FBF00664815 /* ContentView.swift in Sources */,
-				16CDEEB22B4D0FF200664815 /* 👤GroupActivity.swift in Sources */,
+				16CDEEB22B4D0FF200664815 /* PersonasFlipGroupActivity.swift in Sources */,
 				16C477202B8B195600343DD8 /* 🥽debug.swift in Sources */,
 				16CDEEA32B4D0FBF00664815 /* App.swift in Sources */,
 				16CDEEB42B4D0FF200664815 /* 🥽AppModel.swift in Sources */,
@@ -726,7 +726,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -754,7 +754,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -786,13 +786,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
 				PRODUCT_NAME = PersonasFlip;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -817,13 +818,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.aaaakkkkssssttttnnnn.PersonaReversi;
 				PRODUCT_NAME = PersonasFlip;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};

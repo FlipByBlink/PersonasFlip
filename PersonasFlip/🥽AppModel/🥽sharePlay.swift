@@ -4,7 +4,7 @@ import GroupActivities
 extension 🥽AppModel {
     func configureGroupSessions() {
         Task {
-            for await groupSession in 👤GroupActivity.sessions() {
+            for await groupSession in PersonasFlipGroupActivity.sessions() {
                 self.activityState.pieces = .empty
                 self.activityState.showResult = false
                 self.activityState.mode = .localOnly
@@ -83,7 +83,7 @@ extension 🥽AppModel {
     func activateGroupActivity() {
         Task {
             do {
-                let groupActivity = 👤GroupActivity()
+                let groupActivity = PersonasFlipGroupActivity()
                 switch await groupActivity.prepareForActivation() {
                     case .activationPreferred:
                         let result = try await groupActivity.activate()

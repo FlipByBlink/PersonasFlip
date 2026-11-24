@@ -1,7 +1,7 @@
 import GroupActivities
 import SwiftUI
 
-struct 👤GroupActivity: GroupActivity {
+struct PersonasFlipGroupActivity: GroupActivity {
     var metadata: GroupActivityMetadata {
         var value = GroupActivityMetadata()
         value.title = String(localized: "Play game")
